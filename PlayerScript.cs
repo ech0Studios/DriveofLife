@@ -71,26 +71,14 @@ public class PlayerScript : MonoBehaviour
                 #region Ice Cream State
 
 
-                //else if (Input.GetMouseButtonDown(0) && onIceCreamSelect && GameManager.currentState == 1) //Ice Cream Movement To Select A Gate
-                //{
-                //    IceCreamChangeLanePanel.SetActive(false);
-                //    MMVibrationManager.Haptic(HapticTypes.SoftImpact);
-                //    changeLane = !changeLane;
-                //}
+              
                 else if (Input.GetMouseButtonDown(0) && GameManager.currentState == 1)
                 {
                     panels[1].transform.GetChild(2).gameObject.SetActive(false);
                     MMVibrationManager.Haptic(HapticTypes.SoftImpact);
 
                 }
-                //else if (changeLane && onIceCreamSelect)
-                //{
-                //    transform.position = Vector3.Lerp(transform.position, new Vector3(2, transform.position.y, transform.position.z), 0.1f);
-                //}
-                //else if (!changeLane && onIceCreamSelect)
-                //{
-                //    transform.position = Vector3.Lerp(transform.position, new Vector3(-2, transform.position.y, transform.position.z), 0.1f);
-                //}
+                
                 #endregion
 
                 // To Do Not Exit The Road
